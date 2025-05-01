@@ -1,7 +1,9 @@
 💊 Pharma FAQ Assistant
+
 Pharma FAQ Assistant is an intelligent, NLP-powered question-answering web application built using Python and Streamlit. It allows users to ask free-form queries related to pharmaceutical products and get accurate, relevant responses by semantically searching through a curated FAQ dataset.
 
 🚀 Features
+
 🔍 Semantic Search using Sentence-BERT (intfloat/e5-base-v2)
 
 💡 Query Expansion with Synonyms to improve retrieval accuracy
@@ -13,6 +15,7 @@ Pharma FAQ Assistant is an intelligent, NLP-powered question-answering web appli
 🤖 Trained on a custom Excel-based FAQ dataset
 
 🛠️ Tech Stack
+
 Python
 
 Streamlit – UI framework
@@ -26,6 +29,7 @@ Pandas – Data loading and manipulation
 Pickle – For serializing embedded data
 
 🧠 How It Works
+
 1. Embedding FAQs
 Using embed_faqs.py, the application:
 
@@ -49,7 +53,9 @@ Encodes the expanded query and searches the FAISS index
 Returns the most relevant Q&A pair(s) with confidence scores
 
 🧪 Running the Project
+
 🔧 Prerequisites
+
 Make sure you have the following installed:
 
 bash
@@ -70,22 +76,28 @@ faiss_index.bin – Saved FAISS index
 faq_data.pkl – Pickled FAQ question-answer list
 
 ▶️ Step 1: Generate Embeddings
+
 bash
 Copy
 Edit
 python embed_faqs.py
+
 ▶️ Step 2: Launch Streamlit App
+
 bash
 Copy
 Edit
 streamlit run app.py
+
 📂 FAQ Excel Format
+
 The Excel file (faqs.xlsx) should contain at least the following columns:
 
 Question	Answer
 What is Drug X used for?	It is used to treat Condition Y.
 
 🧰 Example Use Cases
+
 Customer support bots for pharma companies
 
 Internal knowledge assistants for healthcare professionals
@@ -93,7 +105,9 @@ Internal knowledge assistants for healthcare professionals
 Quick reference tool for patients and pharmacists
 
 🤝 Contributions
+
 Contributions are welcome! Please open an issue or submit a pull request if you have ideas for improving the assistant — whether that's adding new features, improving search relevance, or UI enhancements.
 
 📜 License
+
 This project is licensed under the MIT License.
